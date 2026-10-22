@@ -1,0 +1,61 @@
+/* =========================================
+   Este archivo muestra el diseño visual general del sistema
+   en donde se definen tamaños y formatos
+========================================= */
+* {
+  box-sizing: border-box;
+  /*Se eliminan los margenes*/
+  margin: 0;
+  /*Se elimina los espacios internos predeterminados*/
+  padding: 0;
+}
+
+/* =========================================
+   CONFIGURACIÓN GENERAL DE LA PÁGINA
+   Para el contendio principal para dar formato
+========================================= */
+body {
+  min-height: 100vh;
+  /*El tipo de letra para usar es Arial, 
+  en caso de no estar disponible escoge la siguiente opcion*/
+  font-family: Arial, Helvetica, sans-serif;
+  /*las siguientes dos especificaciones son colores que se muestran en el sistema*/
+  background-color: #f4f6f8;
+  color: #1f2937;
+}
+
+/* =========================================
+   CONTENEDOR PRINCIPAL
+   Se activa el flexbox y se utiliza para acomodar de manera vertical
+========================================= */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+/* =========================================
+   TÍTULO PRINCIPAL
+   Define el tamaño del titulo principal 
+   y cualquier contenido con h1
+========================================= */
+
+.app h1 {
+  font-size: 2rem;
+}
+
+/* =========================================
+   PÁRRAFOS
+   Define el tamaño del texto en general o cualquier 
+   contenido con la etiqueta p 
+========================================= */
+
+.app p {
+  /* Tamaño del texto */
+  font-size: 1rem;
+}
